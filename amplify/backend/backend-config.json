@@ -1,10 +1,27 @@
 {
-  "auth": {
-    "ttcms3cadfd08": {
-      "service": "Cognito",
+  "auth": {},
+  "api": {
+    "notesapp": {
+      "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "demo"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  },
+  "storage": {
+    "imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
     }
   }
 }

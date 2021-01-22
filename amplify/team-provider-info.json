@@ -28,11 +28,6 @@
       "StackName": "amplify-ttcms-dev-12605",
       "StackId": "arn:aws:cloudformation:us-east-2:385073345712:stack/amplify-ttcms-dev-12605/6ec72e00-5c48-11eb-a56c-0a3a6a13a58a",
       "AmplifyAppId": "d1qcijrseqj1fq"
-    },
-    "categories": {
-      "auth": {
-        "ttcms3cadfd08": {}
-      }
     }
   }
 }
